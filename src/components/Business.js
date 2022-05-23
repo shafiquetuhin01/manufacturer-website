@@ -1,9 +1,14 @@
 import React from 'react';
 import img from '../assets/images/bg3.jpg';
 const Business = () => {
-    
+    const bgimg = {
+        backgroundImage:`url(${img})`,
+        height:'100vh',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+    }
     return (
-        <div style={{ backgroundImage: `${img}`,width:'100%'}}>
+        <div style={bgimg}>
             <h2>our manufacturing Business summary</h2>
             <h5>try to understand user expectation</h5>
             <div>Dotted----</div>
