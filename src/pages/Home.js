@@ -1,11 +1,11 @@
 import React from 'react';
-import Landing from './Landing';
+import Hero from './Hero';
 import Tools from './Tools';
 
 const Home = () => {
     return (
-        <div>
-            <Landing />
+        <div className='sm:mx-4 lg:mx-20'>
+            <Hero />
             <Tools />
         </div>
     );

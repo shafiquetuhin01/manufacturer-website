@@ -1,7 +1,7 @@
 import React from "react";
 import heroimg from "../assets/images/hero-main.jpg";
 
-const Landing = () => {
+const Hero = () => {
   return (
     <div class="hero min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
@@ -18,4 +18,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Hero;

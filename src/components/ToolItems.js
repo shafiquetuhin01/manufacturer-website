@@ -1,17 +1,19 @@
 import React from "react";
 
-const ToolItems = () => {
+const ToolItems = ({tools}) => {
+    const {name,price,description,qty,url} = tools;
   return (
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card bg-base-100 shadow-xl mx-auto lg:mx-3">
       <figure>
         <img
-          src="https://api.lorem.space/image/shoes?w=400&h=225"
-          alt="Shoes"
+          src={url} width="400" height="250" alt="Shoes"
         />
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 class="card-title">Name: {name}</h2>
+        <p>Short description: {description}</p>
+        <p className="font-bold">Quantity: {qty}</p>
+        <p className="font-bold">Price: {price}</p>
         <div class="card-actions justify-end">
           <button class="btn btn-primary">Buy Now</button>
         </div>
