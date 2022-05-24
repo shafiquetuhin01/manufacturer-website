@@ -11,9 +11,6 @@ const ToolItems = ({tools}) => {
     if(user){
       navigate('/purchase');
     }
-    else{
-      navigate('/login');
-    }
   }
   return (
     <div class="card bg-base-100 shadow-xl mx-auto lg:mx-3">

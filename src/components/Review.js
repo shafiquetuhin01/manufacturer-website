@@ -42,7 +42,7 @@ const Review = () => {
               checked
             />
           </div>
-          <div class="avatar mx-auto mt-3">
+          <div class="avatar mx-auto my-4">
             <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src="https://api.lorem.space/image/face?hash=3174" />
             </div>
@@ -83,7 +83,7 @@ const Review = () => {
               checked
             />
           </div>
-          <div class="avatar mx-auto mt-3">
+          <div class="avatar mx-auto my-4">
             <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src="https://api.lorem.space/image/face?hash=3174" />
             </div>
@@ -124,7 +124,7 @@ const Review = () => {
               checked
             />
           </div>
-          <div class="avatar mx-auto mt-3">
+          <div class="avatar mx-auto my-4">
             <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src="https://api.lorem.space/image/face?hash=3174" />
             </div>
