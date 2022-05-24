@@ -1,7 +1,20 @@
 import React from "react";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from "react-router-dom";
+import auth from '../firebase.init';
 
 const ToolItems = ({tools}) => {
-    const {name,price,description,qty,url} = tools;
+  const [user] = useAuthState(auth);
+  const {name,price,description,qty,url} = tools;
+  const navigate = useNavigate();
+  const handleBuyNow = () =>{
+    if(user){
+      navigate('/purchase');
+    }
+    else{
+      navigate('/login');
+    }
+  }
   return (
     <div class="card bg-base-100 shadow-xl mx-auto lg:mx-3">
       <figure>
@@ -15,7 +28,7 @@ const ToolItems = ({tools}) => {
         <p className="font-bold">Quantity: {qty}</p>
         <p className="font-bold">Price: ${price}</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
+          <button onClick={handleBuyNow} class="btn btn-primary">Buy Now</button>
         </div>
       </div>
     </div>
