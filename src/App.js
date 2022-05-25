@@ -11,6 +11,7 @@ import RequireAuth from "./pages/Login/RequireAuth";
 import SignUp from "./pages/Login/SignUp";
 import NotFound from "./pages/NotFound";
 import Purchase from "./pages/Purchase";
+import Tools from "./pages/Tools";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               </RequireAuth>
             }
           />
+          <Route path="purchase" element={<Tools />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
