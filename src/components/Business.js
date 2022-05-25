@@ -21,8 +21,8 @@ const Business = () => {
         </span>
       </div>
       <div className="grid lg:grid-cols-4 sm:grid-cols-2">
-        <div class="card text-center">
-          <div class="card-body">
+        <div className="card text-center">
+          <div className="card-body">
             <h2 className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,14 +39,14 @@ const Business = () => {
                 />
               </svg>
             </h2>
-            <h2 class="font-bold text-5xl text-center">48</h2>
+            <h2 className="font-bold text-5xl text-center">48</h2>
             <p className="text-primary text-center text-2xl font-bold">
               Countries
             </p>
           </div>
         </div>
-        <div class="card text-center">
-          <div class="card-body">
+        <div className="card text-center">
+          <div className="card-body">
             <h2 className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Business = () => {
                 />
               </svg>
             </h2>
-            <h2 class="font-bold text-5xl text-center">
+            <h2 className="font-bold text-5xl text-center">
               5000<span className="text-3xl">+</span>
             </h2>
             <p className="text-primary text-center text-2xl font-bold">
@@ -71,8 +71,8 @@ const Business = () => {
             </p>
           </div>
         </div>
-        <div class="card text-center">
-          <div class="card-body">
+        <div className="card text-center">
+          <div className="card-body">
             <h2 className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const Business = () => {
                 />
               </svg>
             </h2>
-            <h2 class="font-bold text-5xl text-center">
+            <h2 className="font-bold text-5xl text-center">
               100<span className="text-3xl">%</span>
             </h2>
             <p className="text-primary text-center text-2xl font-bold">
@@ -97,8 +97,8 @@ const Business = () => {
             </p>
           </div>
         </div>
-        <div class="card text-center">
-          <div class="card-body">
+        <div className="card text-center">
+          <div className="card-body">
             <h2 className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const Business = () => {
                 />
               </svg>
             </h2>
-            <h2 class="font-bold text-5xl text-center">
+            <h2 className="font-bold text-5xl text-center">
               1000<span className="text-3xl">+</span>
             </h2>
             <p className="text-primary text-center text-2xl font-bold">
