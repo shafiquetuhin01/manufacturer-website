@@ -1,12 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const ToolItems = ({ tools }) => {
-  const { _id, name, price, description, qty, url } = tools;
+const ToolItems = ({ tool, setDetails }) => {
+  const { _id, name, price, description, qty, url } = tool;
   const navigate = useNavigate();
-  const handleBuyNow = (id) => {
-    navigate(`/purchase/${id}`);
-  };
+  const location = useLocation();
+  // const handleBuyNow = () => {
+  //   navigate('/purchase');
+  //   setDetails(tool);
+  // };
   return (
     <div class="card bg-base-100 shadow-xl mx-auto lg:mx-3">
       <figure>
@@ -22,9 +24,17 @@ const ToolItems = ({ tools }) => {
         <p className="font-bold">Quantity: {qty}</p>
         <p className="font-bold">Price: ${price}</p>
         <div class="card-actions justify-end">
-          <button onClick={()=>handleBuyNow(_id)} class="btn btn-primary">
+          <label
+            for="details-modal"
+            onClick={() => {
+              
+              setDetails(tool);
+            }}
+            class="modal-button btn btn-primary"
+           
+          >
             Buy Now
-          </button>
+          </label>
         </div>
       </div>
     </div>
