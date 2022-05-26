@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import AddReview from "./pages/Dashboard/AddReview";
@@ -13,6 +12,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login/Login";
 import RequireAuth from "./pages/Login/RequireAuth";
 import SignUp from "./pages/Login/SignUp";
+import MyPortfolio from "./pages/MyPortfolio";
 import NotFound from "./pages/NotFound";
 import Purchase from "./pages/Purchase";
 import Tools from "./pages/Tools";
@@ -44,7 +44,7 @@ function App() {
             </Route>
          
           <Route path="purchase" element={<Tools />} />
-          <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<MyPortfolio />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />

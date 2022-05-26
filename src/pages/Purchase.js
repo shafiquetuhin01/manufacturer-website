@@ -11,7 +11,7 @@ const Purchase = () => {
   const { name, price, qty, _id, url } = detailItem;
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${purchaseId}`)
+    fetch(`https://cryptic-hollows-53352.herokuapp.com/service/${purchaseId}`)
       .then((res) => res.json())
       .then((data) => setDetailsItem(data));
   }, [purchaseId]);
@@ -28,7 +28,7 @@ const Purchase = () => {
       phone: e.target.phone.value,
       address: e.target.address.value,
     };
-    fetch('http://localhost:5000/orders',{
+    fetch('https://cryptic-hollows-53352.herokuapp.com/orders',{
       method: "POST",
       headers: {
         'content-type': 'application/json'

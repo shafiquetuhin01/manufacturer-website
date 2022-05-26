@@ -8,7 +8,7 @@ const MyOrders = () => {
   const [user, loading] = useAuthState(auth);
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/service?user=${user.email}`)
+      fetch(`https://cryptic-hollows-53352.herokuapp.com/service?user=${user.email}`)
         .then((res) => res.json())
         .then((data) => setOrders(data));
     }

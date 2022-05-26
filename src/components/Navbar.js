@@ -23,8 +23,8 @@ const Navbar = ({ children }) => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about" className="rounded-lg">
-          About
+        <NavLink to="/portfolio" className="rounded-lg">
+          Portfolio
         </NavLink>
       </li>
       <li>
