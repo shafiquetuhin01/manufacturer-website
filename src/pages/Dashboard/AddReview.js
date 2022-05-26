@@ -1,9 +1,10 @@
 import React from 'react';
+import Review from '../../components/Review';
 
 const AddReview = () => {
     return (
         <div>
-            <h2>This is add a review page</h2>
+            <Review></Review>
         </div>
     );
 };

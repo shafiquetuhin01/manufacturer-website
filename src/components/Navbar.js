@@ -101,7 +101,6 @@ const Navbar = ({ children }) => {
   );
   return (
     <div className="">
-      <input id="" type="checkbox" className="" />
       <div className="flex flex-col">
         {/* <!-- Navbar --> */}
         <div className="w-full lg:px-20 navbar bg-base-300">

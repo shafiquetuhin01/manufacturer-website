@@ -20,9 +20,9 @@ const Purchase = () => {
     const itemBooking = {
       itemId: _id,
       price,
-      itemName: name,
-      quantity: qty,
-      image: url,
+      name,
+      qty,
+      url,
       userName: user.displayName,
       user: user.email,
       phone: e.target.phone.value,
