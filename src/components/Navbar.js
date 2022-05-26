@@ -37,6 +37,11 @@ const Navbar = ({ children }) => {
           Contact
         </NavLink>
       </li>
+      {user && <li>
+        <NavLink to="/dashboard" className="rounded-lg">
+          Dashboard
+        </NavLink>
+      </li>}
       <li>
         {user ? (
           <div className="flex items-center p-0">
@@ -95,14 +100,14 @@ const Navbar = ({ children }) => {
     </>
   );
   return (
-    <div className="drawer drawer-end">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
+    <div className="">
+      <input id="" type="checkbox" className="" />
+      <div className="flex flex-col">
         {/* <!-- Navbar --> */}
         <div className="w-full lg:px-20 navbar bg-base-300">
           <div className="flex-1 px-2 mx-2 font-bold text-2xl">BD TOOLS</div>
           <div className="flex-none lg:hidden">
-            <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+            <label  htmlFor="" className="btn btn-square btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -130,12 +135,12 @@ const Navbar = ({ children }) => {
         {/* <!-- Page content here --> */}
         {children}
       </div>
-      <div className="drawer-side">
-        <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+      <div className="">
+        <label  htmlFor="" className=""></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 mt-16">
           {/* <!-- Sidebar content here --> */}
-          {searchBtn}
-          {menuBar}
+          {/* {searchBtn}
+          {menuBar} */}
         </ul>
       </div>
     </div>
