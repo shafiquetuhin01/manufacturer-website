@@ -28,6 +28,17 @@ const Purchase = () => {
       phone: e.target.phone.value,
       address: e.target.address.value,
     };
+    fetch('http://localhost:5000/orders',{
+      method: "POST",
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(itemBooking)
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      setDetailsItem(null);
+    })
   };
   return (
     <div>
