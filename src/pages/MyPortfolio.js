@@ -41,7 +41,11 @@ const MyPortfolio = () => {
         My completed Projects
       </h2>
       <div class="card card-compact w-10/12 mx-auto mt-6 bg-base-100 shadow-xl">
-        <div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1"></div>
+        <div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1">
+          <img className="h-full" src="https://i.ibb.co/bskvSXf/porj1.png" alt=""/>
+          <img className="h-full" src="https://i.ibb.co/30761W3/proj2.png" alt=""/>
+          <img className="h-full" src="https://i.ibb.co/5vxv0FC/proj3.png" alt=""/>
+        </div>
       </div>
     </div>
   );

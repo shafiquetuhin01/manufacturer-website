@@ -6,7 +6,7 @@
     * Firebase
     * Mongodb
     * Heroku
-    * & custom css
+    
 
 * You will find all the clean in this project.
 * I will fulfill your extra code related requirements as you want.
