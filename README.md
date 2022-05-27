@@ -14,11 +14,11 @@
 * I am always ready to any irrelevant mistakes. I will recover it as soon as possible.
 * After all you will get a fresh and cool satisfaction.
 
-Here is the my live website link, you can find out:[Create React App](https://bd-tools-f9fa7.web.app/)
+Here is the my live website link, you can find out:[BD TOOLS](https://bd-tools-f9fa7.web.app/)
 
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project done with telwind and daisy ui [BD TOOLS](https://bd-tools-f9fa7.web.app/).
 
 ## Available Scripts
 
